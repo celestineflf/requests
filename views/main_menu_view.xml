@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+        <!-- Top Menu Items -->
+        <menuitem id="req_menu_root"
+            name="Requests"
+            web_icon="requests,static/description/icon.png"
+            sequence="0"/>
+
+        <menuitem id="req_menu_hub"
+            name="Request Hub"
+            parent="req_menu_root"
+            action="action_menu_hub"
+            sequence="2"/>
+
+
+
+
+
+
+    <!-- Hub Form View -->
+        <record id="view_hub_form" model="ir.ui.view">
+            <field name="name">req.hub.view.form</field>
+            <field name="model">req.hub</field>
+            <field name="arch" type="xml">
+                <form create="false" edit="false" delete="false" duplicate="false">
+                    <header>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                Departments
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <button name="%(action_ticket_menu)d" string="IT" type="action" class="btn-success"/>
+                                <button name="%(action_sales_menu)d" string="Sales" type="action" class="btn-danger"/>
+                            </group>
+                            <group>
+                                <button name="%(action_support_menu)d" string="Support" type="action" class="btn-info"/>
+                                <button name="%(action_logistic_menu)d" string="Logistics" type="action" class="btn-warning"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <button name="%(action_purchase_menu)d" string="Purchase" type="action" class="btn-primary"/>
+                                <button name="%(action_finance_menu)d" string="Finance" type="action" class="btn-outline-secondary"/>
+                            </group>
+                            <group>
+                                <button name="%(action_management_menu)d" string="Management" type="action" class="btn-dark"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    <!-- Hub Preset Record -->
+        <record id="record_it_tickets" model="req.hub">
+            <field name="name">Hub</field>
+            <field name="id">1</field>
+        </record>
+
+</odoo>
