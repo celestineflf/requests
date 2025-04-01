@@ -1,9 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_req_hub,access.req.hub,model_req_hub,,1,1,1,1
-access_req_it,access.req.it.ticket,model_req_it_ticket,,1,1,1,1
-access_req_support,access.req.sp.ticket,model_req_sp_ticket,,1,1,1,1
-access_req_logistics,access.req.lg.ticket,model_req_lg_ticket,,1,1,1,1
-access_req_sales,access.req.sa.ticket,model_req_sa_ticket,,1,1,1,1
-access_req_manage,access.req.mr.ticket,model_req_mr_ticket,,1,1,1,1
-access_req_finance,access.req.fi.ticket,model_req_fi_ticket,,1,1,1,1
-
